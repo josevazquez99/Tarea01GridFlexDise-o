@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    display: flex; 
+    height: 100vh; /* Establezco de altura toda la pantalla con la propiedad vh*/
+}
+
+.selection {
+    flex: 1; /* Hago que el elemento ocupe todo el espacio disponible en el contenedor */
+    position: relative; /* Permito posicionar elementos hijos absolutamente dentro de este contenedor */
+}
+
+.selection img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Ajusto la imagen para cubrir el contenedor sin distorsionar */
+}
+
+.text {
+    position: absolute; /* Posiciono el texto absolutamente dentro del contenedor más cercano con position: relative */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(-90deg); /* Centro el texto y lo rota -90 grados */
+    font-size: 3em; /* Establezco el tamaño del texto en 3 veces el tamaño de la fuente del elemento padre */
+    color: white; 
+    font-weight: bold; /* Establezco el texto en negrita */
+    text-transform: uppercase; /* Convierto el texto a mayúsculas */
+}

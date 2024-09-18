@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    width: 40%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right {
+    width: 80%;
+    background: url('./img/img_login.png') no-repeat center center;
+    background-size: cover;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 200px; 
+}
+
+/* Ajusta el tamaño del formulario */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #CDCACA;
+    border-radius: 5px;
+    background-color: #CDCACA;
+}
+
+.login-button {
+    width: 100%;
+    max-width: 280px; 
+    padding: 10px;
+    background-color: #39810D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.google-login {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px;
+    background-color: #CDCACA;
+    color: #757575;
+    border: 1px solid #CDCACA;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-login img {
+    width: 20px;
+    margin-right: 10px;
+}
