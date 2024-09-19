@@ -63,18 +63,20 @@ body {
     width: 100px;
 }
 .products .items {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
 }
 .products .item {
-    width: 200px;
-    margin: 15px;
     text-align: center;
+    width: 200px;
 }
 .products .item img {
     width: 100%;
     border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
 }
 .products .item p {
     margin: 10px 0;
