@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: 700;
+}
+.header .user {
+    display: flex;
+    align-items: center;
+}
+.header .user img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.hero .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero .text h1 {
+    font-size: 60px;
+    margin: 0;
+}
+.hero .text h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.hero .text p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.products {
+    text-align: center;
+    padding: 50px 0;
+}
+.products .logo {
+    margin-bottom: 30px;
+}
+.products .logo img {
+    width: 100px;
+}
+.products .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.products .item {
+    text-align: center;
+    width: 200px;
+}
+.products .item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+.products .item p {
+    margin: 10px 0;
+}
+.products .item .price {
+    font-weight: 700;
+}
